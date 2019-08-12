@@ -22,15 +22,25 @@ class MainActivity : AppCompatActivity() {
         }
 
         imageViewList[0].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.adventure_automobile_classic_2533092))
+        imageViewList[0].contentDescription = "Classic automobile"
         imageViewList[1].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.aerial_photography_aerial_shot_aerial_view_2583847))
+        imageViewList[1].contentDescription = "Aerial photography"
         imageViewList[2].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.afterglow_beach_cliff_2555285))
+        imageViewList[2].contentDescription = "Beach cliff"
         imageViewList[3].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.alley_architecture_buildings_2526517))
+        imageViewList[3].contentDescription = "Architecture"
         imageViewList[4].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.architectural_design_architecture_bridge_2540653))
+        imageViewList[4].contentDescription = "Bridge architecture"
         imageViewList[5].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.bloom_blossom_flora_2567011))
+        imageViewList[5].contentDescription = "Flower"
         imageViewList[6].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.close_up_colorful_colors_2529148))
+        imageViewList[6].contentDescription = "Colorful shoes"
         imageViewList[7].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.clouds_coconut_trees_daylight_2486168))
+        imageViewList[7].contentDescription = "Coconut trees"
         imageViewList[8].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.colorful_colourful_houses_2501965))
+        imageViewList[8].contentDescription = "Colorful houses"
         imageViewList[9].setImageDrawable(ContextCompat.getDrawable(this, R.drawable.wallpaper_astronomy_astrophotography_2538107))
+        imageViewList[9].contentDescription = "Astronomy"
 
         val layoutParams = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
 
@@ -43,6 +53,5 @@ class MainActivity : AppCompatActivity() {
                 else -> right_column.addView(imageViewList[index])
             }
         }
-
     }
 }
